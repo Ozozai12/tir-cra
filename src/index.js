@@ -7,7 +7,7 @@ import './i18n';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter basename="https://cheerful-faloodeh-c3869b.netlify.app/">
+    <BrowserRouter>
       <App />
     </BrowserRouter>
   </React.StrictMode>
