@@ -1,0 +1,123 @@
+.container {
+  position: relative;
+  margin: 0 auto;
+  width: 1280px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.sidebar {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 59px;
+  height: 138px;
+  background-color: rgba(201, 194, 175, 0.51);
+  border-radius: 10px;
+  left: 120px;
+  top: 499px;
+  z-index: 80;
+}
+
+.frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.frame:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.frame:hover {
+  background-color: #c9c2af;
+}
+
+.frame:active {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+  color: #555555;
+  width: 36px;
+  height: 36px;
+}
+
+.icon:active {
+  color: #ffffff;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.9px) {
+  .sidebar {
+    left: 32px;
+    top: 839px;
+  }
+
+  .sidebar.about {
+    top: 473px;
+    right: 0;
+  }
+
+  .sidebar.reviews {
+    top: 293px;
+    right: 0;
+  }
+
+  .sidebar.payment {
+    top: 585px;
+    right: 0px;
+  }
+
+  .sidebar.celebrity {
+    top: 585px;
+    right: 0px;
+  }
+
+  .sidebar.magazines {
+    top: 210px;
+    right: 0px;
+  }
+
+  .sidebar.beauty {
+    top: 210px;
+    right: 0px;
+  }
+
+  .sidebar.pregnancy {
+    top: 345px;
+    right: 0px;
+  }
+
+  .sidebar.family {
+    top: 270px;
+    right: 0px;
+  }
+
+  .sidebar.before-after {
+    top: 270px;
+    right: 0px;
+  }
+
+  .sidebar.eighteen {
+    top: 270px;
+    right: 0px;
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  .sidebar {
+    width: 42px;
+    height: 97px;
+    top: 450px;
+    left: 0;
+  }
+
+  .frame:not(:last-child) {
+    margin-bottom: 0;
+  }
+}

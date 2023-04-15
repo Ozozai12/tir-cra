@@ -1,0 +1,189 @@
+.reviewsSection {
+  background-image: url('https://res.cloudinary.com/dmadhdzzm/image/upload/v1678353750/this-is-retoucher/backReview_fdty25.jpg');
+  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.pageTitle {
+  display: none;
+  margin-top: 34px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  color: #c9c2af;
+  margin-left: 37px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1280px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.deviceContainer {
+  margin: 0 auto;
+  width: 1280px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.device {
+  padding-top: 217px;
+  margin-left: 133px;
+  width: 712px;
+  height: 459px;
+  background-image: url('https://res.cloudinary.com/dmadhdzzm/image/upload/v1678353750/this-is-retoucher/small_samsung_galaxy_tab_s7_74dbd026ab_1_oknpvr.jpg');
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+
+.deviceScreen {
+  margin-top: 14px;
+  margin-left: 16px;
+  width: 680px;
+  height: 432px;
+  background: #e1dccd;
+  border-radius: 10px;
+}
+
+.gliderContainerFull {
+  padding-top: 65px;
+  margin-left: 45px;
+  margin-right: 45px;
+}
+
+.gliderContainerMobile {
+  display: none;
+}
+
+.reviewCard {
+  display: flex;
+  align-items: center;
+}
+
+.leftArrow {
+  margin-top: 30px;
+  margin-left: 0;
+  width: 35px;
+  height: 35px;
+}
+
+.rightArrow {
+  margin-top: 30px;
+  margin-left: 0;
+  width: 35px;
+  height: 35px;
+}
+
+.reviewImage {
+  width: 167px;
+  height: 296px;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.9px) {
+  .container {
+    width: 704px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .deviceContainer {
+    width: 704px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 296px;
+  }
+
+  .pageTitle {
+    display: block;
+  }
+
+  .reviewsSection {
+    background-image: none;
+  }
+
+  .device {
+    padding-top: 296px;
+    margin-left: 0;
+    width: 704px;
+    height: 454px;
+  }
+
+  .deviceScreen {
+    margin-top: 9px;
+    margin-left: 12px;
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  .reviewsSection {
+    background-image: none;
+    height: calc(100vh - 200px);
+  }
+
+  .container {
+    width: 358px;
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+
+  .pageTitle {
+    display: block;
+    margin-top: 40px;
+  }
+
+  .deviceContainer {
+    width: 358px;
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+
+  .device {
+    padding-top: 0;
+    margin: 83px auto;
+    width: 276px;
+    height: 474px;
+    background-image: url('https://res.cloudinary.com/dmadhdzzm/image/upload/v1679340118/this-is-retoucher/2_rnnesi.png');
+    background-size: contain;
+  }
+
+  .deviceScreen {
+    padding-top: 45px;
+    margin-left: 42px;
+    width: 192px;
+    height: 357px;
+    background: transparent;
+  }
+
+  .gliderContainerFull {
+    display: none;
+  }
+
+  .gliderContainerMobile {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .reviewImage {
+    width: 198px;
+    height: 357px;
+    border-radius: 14px;
+  }
+
+  .leftArrow {
+    margin-top: 90px;
+    margin-left: 0;
+  }
+
+  .rightArrow {
+    margin-top: 90px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}

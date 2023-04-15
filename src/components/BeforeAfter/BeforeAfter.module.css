@@ -1,0 +1,138 @@
+.container {
+  margin: 0 auto;
+  width: 1280px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.pageTitle {
+  display: none;
+  margin-top: 34px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  color: #c9c2af;
+  margin-left: 37px;
+}
+
+.pageContainer {
+  padding-top: 62px;
+  margin-left: 73px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.leftColumn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 583px;
+}
+
+.rightColumn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 583px;
+}
+
+.beforeafterPhoto {
+  width: 281px;
+  margin-bottom: 55px;
+  cursor: zoom-in;
+  transition: all 100ms linear;
+}
+
+.beforeafterPhoto:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.beforeafterPhoto:nth-child(even) {
+  margin-left: 20px;
+  animation-name: photosAppearing;
+  animation-duration: 1s;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.9px) {
+  .container {
+    width: 704px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .pageTitle {
+    display: block;
+  }
+
+  .pageContainer {
+    width: 580px;
+    padding-top: 3px;
+    margin-left: 61px;
+    flex-wrap: wrap;
+  }
+
+  .leftColumn {
+    width: 580px;
+  }
+
+  .rightColumn {
+    width: 580px;
+  }
+
+  .beforeafterPhoto {
+    width: 281px;
+    margin-bottom: 20px;
+  }
+
+  .beforeafterPhoto:nth-child(even) {
+    margin-left: 18px;
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  .container {
+    width: 358px;
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+
+  .pageTitle {
+    display: block;
+    margin-top: 40px;
+  }
+
+  .pageContainer {
+    padding: 34px 20px 35px 20px;
+    margin-left: 0;
+    width: 319px;
+    flex-wrap: wrap;
+  }
+
+  .leftColumn {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .rightColumn {
+    width: 100%;
+  }
+
+  .beforeafterPhoto {
+    width: 154px;
+    margin-bottom: 11px;
+  }
+
+  .beforeafterPhoto:nth-child(even) {
+    margin-left: 10px;
+  }
+}
+
+@keyframes photosAppearing {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

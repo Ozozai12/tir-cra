@@ -1,0 +1,299 @@
+.container {
+  margin: 0 auto;
+  width: 1280px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.pageContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pageTitle {
+  display: none;
+  margin-top: 34px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  color: #c9c2af;
+  margin-left: 37px;
+}
+
+.textFrame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 84px;
+  margin-left: 125px;
+  width: 414px;
+  height: 648px;
+
+  background-color: rgba(255, 255, 255, 0.62);
+  border: 4px dashed #000000;
+}
+
+.textContainer {
+  width: 315px;
+  height: 625px;
+  margin-top: 11px;
+}
+
+.welcomeText {
+  font-family: 'Habibi';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+
+  color: #000000;
+}
+
+.welcomeList {
+  color: #c9c2af;
+}
+
+.firstLetter {
+  margin-left: 5px;
+  font-family: 'Habibi', serif;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.tapeContainer {
+  position: relative;
+  margin-right: 108px;
+  width: 548px;
+  height: 300px;
+  top: 450px;
+}
+
+.tape {
+  position: absolute;
+  z-index: 4;
+}
+
+.photoOneDesktop {
+  position: absolute;
+  left: 7px;
+  top: -165px;
+  width: 269px;
+  height: 378px;
+  z-index: 1;
+}
+
+.photoOneMobile {
+  display: none;
+}
+
+.photoTwoDesktop {
+  position: absolute;
+  left: 208px;
+  top: -280px;
+  width: 214px;
+  height: 389px;
+  z-index: 2;
+}
+
+.photoTwoMobile {
+  display: none;
+}
+
+.photoThree {
+  position: absolute;
+  right: 10px;
+  top: -110px;
+  width: 129px;
+  height: 321px;
+  z-index: 1;
+}
+
+.photoFour {
+  position: absolute;
+  right: 140px;
+  top: 125px;
+  width: 133px;
+  height: 86px;
+  z-index: 1;
+}
+
+.tapeTextOne {
+  position: absolute;
+  top: -360px;
+  right: 8px;
+
+  font-family: 'Cambo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 45px;
+  letter-spacing: 0.05em;
+
+  color: #858585;
+}
+
+.tapeTextTwo {
+  position: absolute;
+  top: -270px;
+  right: -30px;
+
+  font-family: 'Cambo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 0.125em;
+
+  color: #adadad;
+
+  transform: rotate(-90deg);
+}
+
+.tapeTextPS {
+  position: absolute;
+  bottom: 0;
+  font-family: 'Great Vibes', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 45px;
+
+  color: #000000;
+}
+
+.tapeTextPSAccent {
+  color: #af0707;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.9px) {
+  .container {
+    width: 704px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .pageTitle {
+    display: block;
+  }
+
+  .pageContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+  }
+
+  .textFrame {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+
+  .tapeContainer {
+    margin-right: 0;
+    width: 548px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  .container {
+    width: 358px;
+    padding-left: 1px;
+    padding-right: 1px;
+    height: 1385px;
+    padding: 0;
+  }
+
+  .pageTitle {
+    display: block;
+  }
+
+  .pageContainer {
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+  }
+
+  .tapeContainer {
+    width: 360px;
+    margin-right: 0;
+    top: 230px;
+  }
+
+  .tape {
+    width: auto;
+  }
+
+  .textFrame {
+    margin-top: 18px;
+    margin-left: 0;
+  }
+
+  .photoOneDesktop {
+    display: none;
+  }
+
+  .photoOneMobile {
+    display: block;
+    position: absolute;
+    width: 191.65px;
+    height: auto;
+    left: 3px;
+    top: -167px;
+  }
+
+  .photoTwoDesktop {
+    display: none;
+  }
+
+  .photoTwoMobile {
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: auto;
+    left: 145px;
+    top: -300px;
+    z-index: 2;
+  }
+
+  .photoThree {
+    width: 110px;
+    height: auto;
+    right: 5px;
+    top: -135px;
+  }
+
+  .photoFour {
+    width: 88.43px;
+    height: 58px;
+    right: 92.5px;
+    top: 81.5px;
+    z-index: 5;
+  }
+
+  .tapeTextOne {
+    font-size: 32px;
+    line-height: 36px;
+    top: -420px;
+  }
+
+  .tapeTextTwo {
+    font-size: 24px;
+    line-height: 27px;
+    top: -350px;
+    right: -17px;
+  }
+
+  .tapeTextPS {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .tapeTextPS {
+    position: absolute;
+    bottom: 110px;
+    left: 14px;
+  }
+}

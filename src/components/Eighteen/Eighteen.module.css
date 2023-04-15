@@ -1,0 +1,156 @@
+.container {
+  margin: 0 auto;
+  width: 1280px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.pageTitle {
+  display: none;
+  margin-top: 34px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  color: #c9c2af;
+  margin-left: 37px;
+}
+
+.pageContainer {
+  padding-left: 218px;
+  padding-right: 124px;
+  padding-top: 90px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.columnContainerOne {
+  width: 197px;
+}
+
+.columnContainerTwo {
+  width: 238px;
+}
+
+.columnContainerThree {
+  width: 197px;
+}
+
+.columnContainerFour {
+  width: 246px;
+}
+
+.eighteenPhoto {
+  margin-bottom: 20px;
+  cursor: zoom-in;
+  transition: all 100ms linear;
+}
+
+.eighteenPhoto:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.doublePhotoContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.doublePhotoContainer .eighteenPhoto:nth-child(1) {
+  width: 95px;
+  height: 100%;
+}
+
+.doublePhotoContainer .eighteenPhoto:nth-child(2) {
+  width: 131px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.9px) {
+  .container {
+    width: 704px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .pageTitle {
+    display: block;
+  }
+
+  .pageContainer {
+    padding-left: 122px;
+    padding-right: 127px;
+    padding-top: 3px;
+    flex-wrap: wrap;
+  }
+
+  .columnContainerThree {
+    margin-top: -80px;
+  }
+
+  .columnContainerFour {
+    width: 238px;
+  }
+
+  .doublePhotoContainer .eighteenPhoto:nth-child(1) {
+    width: 95px;
+    height: 100%;
+  }
+
+  .doublePhotoContainer .eighteenPhoto:nth-child(2) {
+    width: 131px;
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  .container {
+    width: 358px;
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+
+  .pageTitle {
+    display: block;
+    margin-top: 40px;
+  }
+
+  .pageContainer {
+    padding: 40px 12px 28px 12px;
+    margin-left: 0;
+    width: 333px;
+    flex-wrap: wrap;
+  }
+
+  .columnContainerOne {
+    width: 144px;
+  }
+
+  .columnContainerTwo {
+    width: 174px;
+  }
+
+  .columnContainerThree {
+    margin-top: -59px;
+    width: 144px;
+  }
+
+  .columnContainerFour {
+    width: 174px;
+  }
+
+  .eighteenPhoto {
+    margin-bottom: 15px;
+  }
+
+  .doublePhotoContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .doublePhotoContainer .eighteenPhoto:nth-child(1) {
+    width: 70px;
+    height: 100%;
+  }
+
+  .doublePhotoContainer .eighteenPhoto:nth-child(2) {
+    width: 95px;
+  }
+}

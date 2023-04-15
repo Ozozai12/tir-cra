@@ -1,0 +1,493 @@
+.container {
+  margin: 0 auto;
+  width: 1280px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.pageTitle {
+  display: none;
+  margin-top: 34px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  color: #c9c2af;
+  margin-left: 37px;
+}
+
+.pageContainerUpper {
+  padding-top: 43px;
+  margin: 0 265px 27px auto;
+  width: 758px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pageContainerLower {
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: 265px;
+  width: 792px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.assetContainerOne {
+  position: relative;
+  display: flex;
+  width: 345px;
+}
+
+.photoOne {
+  display: block;
+  width: 345px;
+  height: 417px;
+  z-index: 1;
+  cursor: zoom-in;
+  transition: all 100ms linear;
+  animation-name: photosAppearing;
+  animation-duration: 1s;
+}
+
+.photoOne:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.frameOne {
+  position: absolute;
+  bottom: -12px;
+  right: 20px;
+  width: 359px;
+  height: 378px;
+  border: 1px solid #000000;
+  z-index: 0;
+}
+
+.titleOne {
+  position: absolute;
+  bottom: 145px;
+  left: -320px;
+  font-family: 'Cambo';
+  font-size: 64px;
+  line-height: 72px;
+
+  color: #858585;
+
+  transform: rotate(-90deg);
+}
+
+.assetContainerTwo {
+  position: relative;
+  display: flex;
+  width: 355px;
+}
+
+.photoTwo {
+  display: block;
+  width: 355px;
+  height: 417px;
+  z-index: 1;
+  cursor: zoom-in;
+  transition: all 100ms linear;
+  animation: photosAppearing 1s;
+}
+
+.photoTwo:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.frameTwo {
+  display: block;
+  position: absolute;
+  width: 342px;
+  height: 407px;
+  bottom: 28px;
+  right: -37px;
+  z-index: 0;
+
+  border: 1px solid #000000;
+}
+
+.titleTwo {
+  position: absolute;
+  bottom: -5px;
+  right: 7px;
+  z-index: 2;
+  font-family: 'Cambo';
+  font-size: 48px;
+  line-height: 54px;
+  letter-spacing: 0.085em;
+
+  color: #ffffff;
+}
+
+.assetContainerThree {
+  position: relative;
+  display: flex;
+  width: 437px;
+  margin-right: 72px;
+}
+
+.photoThree {
+  width: 437px;
+  height: 308px;
+  z-index: 1;
+  cursor: zoom-in;
+  transition: all 100ms linear;
+  animation: photosAppearing 1s;
+}
+
+.photoThree:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.frameThree {
+  position: absolute;
+  bottom: -31px;
+  right: 19px;
+  width: 476px;
+  height: 307px;
+  z-index: 0;
+  border: 1px solid #000000;
+}
+
+.titleThreeDesktop {
+  position: absolute;
+  bottom: -75px;
+  right: 0;
+  font-family: 'Cambo';
+  font-size: 40px;
+  line-height: 45px;
+  letter-spacing: 0.085em;
+  color: #d6d6d6;
+}
+
+.titleThreeTablet {
+  position: absolute;
+  display: none;
+  font-family: 'Cambo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 54px;
+  letter-spacing: 0.155em;
+  z-index: 10;
+  color: #d6d6d6;
+
+  bottom: -77px;
+  left: 0;
+}
+
+.assetContainerFour {
+  position: relative;
+  display: flex;
+  width: 283px;
+}
+
+.photoFour {
+  width: 283px;
+  height: 339px;
+  z-index: 1;
+  cursor: zoom-in;
+  transition: all 100ms linear;
+  animation: photosAppearing 1s;
+}
+
+.photoFour:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.frameFour {
+  position: absolute;
+  bottom: -44px;
+  right: 16px;
+  width: 292px;
+  height: 351px;
+  z-index: 0;
+  border: 1px solid #000000;
+}
+
+.titleFour {
+  position: absolute;
+  bottom: -40px;
+  right: 30px;
+  font-family: 'Cambo';
+  font-size: 40px;
+  line-height: 45px;
+  letter-spacing: 0.125em;
+  color: #adadad;
+}
+
+.titleFive {
+  position: absolute;
+  bottom: 175px;
+  left: 120px;
+  font-family: 'Cambo';
+  font-size: 40px;
+  line-height: 45px;
+  letter-spacing: 0.085em;
+  color: #d6d6d6;
+
+  transform: rotate(-90deg);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.9px) {
+  .container {
+    width: 704px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .pageTitle {
+    display: block;
+  }
+
+  .pageContainerUpper {
+    padding-top: 120px;
+    margin-bottom: 34px;
+    margin-right: 26px;
+    width: 591px;
+  }
+
+  .pageContainerLower {
+    margin-right: 26px;
+    width: 617px;
+  }
+
+  .assetContainerOne {
+    width: 268px;
+  }
+
+  .photoOne {
+    width: 268px;
+    height: 330px;
+  }
+
+  .frameOne {
+    width: 279.44px;
+    height: 299px;
+    bottom: -12px;
+    right: 20px;
+  }
+
+  .titleOne {
+    font-size: 46px;
+    line-height: 52px;
+    bottom: 130px;
+    left: -230px;
+  }
+
+  .assetContainerTwo {
+    width: 276px;
+  }
+
+  .photoTwo {
+    width: 276px;
+    height: 330px;
+  }
+
+  .frameTwo {
+    width: 266.21px;
+    height: 321.93px;
+    right: -27px;
+    bottom: 18px;
+  }
+
+  .titleTwo {
+    font-size: 24px;
+    line-height: 27px;
+    bottom: 0;
+  }
+
+  .assetContainerThree {
+    width: 340px;
+    margin-right: 60px;
+  }
+
+  .photoThree {
+    width: 340.15px;
+    height: 243.63px;
+  }
+
+  .frameThree {
+    bottom: -21px;
+    right: 9px;
+    width: 370.51px;
+    height: 242.83px;
+  }
+
+  .assetContainerFour {
+    width: 220px;
+  }
+
+  .photoFour {
+    width: 220.28px;
+    height: 268.15px;
+  }
+
+  .titleThreeDesktop {
+    display: none;
+  }
+
+  .titleThreeTablet {
+    display: block;
+  }
+
+  .frameFour {
+    width: 227.29px;
+    height: 277.64px;
+    bottom: -39px;
+    right: 10px;
+  }
+
+  .titleFour {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  .container {
+    width: 358px;
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+
+  .pageTitle {
+    display: block;
+    margin-top: 40px;
+  }
+
+  .pageContainerUpper {
+    padding-top: 0;
+    margin-top: 51px;
+    width: 360px;
+    flex-wrap: wrap;
+  }
+
+  .pageContainerLower {
+    margin-top: 40px;
+    width: 360px;
+    flex-wrap: wrap;
+  }
+
+  .assetContainerOne {
+    width: 268.54px;
+    margin-left: 75px;
+    margin-bottom: 64px;
+  }
+
+  .photoOne {
+    width: 268.54px;
+    height: 329.84px;
+  }
+
+  .frameOne {
+    bottom: -12px;
+    right: 20px;
+    width: 279.44px;
+    height: 299px;
+  }
+
+  .titleOne {
+    bottom: 90px;
+    left: -170px;
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .assetContainerTwo {
+    width: 276.32px;
+    margin-left: 36px;
+  }
+
+  .photoTwo {
+    width: 276.32px;
+    height: 329.84px;
+  }
+
+  .frameTwo {
+    width: 266.21px;
+    height: 321.93px;
+    bottom: 23px;
+    right: -30px;
+  }
+
+  .titleTwo {
+    bottom: 0px;
+    right: 3px;
+    font-size: 24px;
+    line-height: 27px;
+  }
+
+  .assetContainerThree {
+    width: 307.22px;
+    margin-right: 6px;
+    margin-left: 46px;
+    margin-bottom: 106px;
+  }
+
+  .photoThree {
+    width: 307.22px;
+    height: 227.38px;
+  }
+
+  .frameThree {
+    bottom: -21px;
+    right: 9px;
+    width: 334.64px;
+    height: 226.64px;
+  }
+
+  .titleThreeDesktop {
+    display: none;
+  }
+
+  .titleThreeTablet {
+    display: block;
+    font-size: 48px;
+    line-height: 54px;
+    letter-spacing: 0.155em;
+    bottom: -78px;
+    left: 0;
+  }
+
+  .assetContainerFour {
+    width: 220.28px;
+    margin-right: 60px;
+    margin-bottom: 104px;
+  }
+
+  .photoFour {
+    width: 220.28px;
+    height: 268.15px;
+  }
+
+  .frameFour {
+    bottom: -44px;
+    right: 16px;
+    width: 227.29px;
+    height: 277.64px;
+  }
+
+  .titleFour {
+    display: none;
+  }
+
+  .titleFive {
+    display: none;
+  }
+}
+
+@keyframes photosAppearing {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

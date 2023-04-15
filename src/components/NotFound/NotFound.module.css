@@ -1,0 +1,125 @@
+.notFoundSection {
+  display: flex;
+  justify-content: space-between;
+}
+
+.textSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+}
+
+.number {
+  display: block;
+  font-family: 'Monoton';
+  font-size: 140px;
+  line-height: 218px;
+  color: #afc6dc;
+}
+
+.error {
+  display: block;
+  margin-top: -30px;
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 41px;
+  color: #5389c0;
+}
+
+.pageNotFound {
+  display: block;
+  font-family: 'Frank Ruhl Libre';
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 46px;
+
+  color: #5389c0;
+
+  margin-bottom: 45px;
+}
+
+.backButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 214px;
+  height: 55px;
+  background: #b0589c;
+  border-radius: 10px;
+  font-family: 'Frank Ruhl Libre';
+  font-size: 20px;
+  line-height: 26px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.backButton:hover {
+  background: #a0548f;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.backButton:active {
+  background: #843071;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.notFoundImage {
+  width: 50vw;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.9px) {
+  .notFoundSection {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .textSide {
+    padding-top: 89px;
+  }
+
+  .imageSide {
+    margin-top: 68px;
+  }
+
+  .notFoundImage {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  .notFoundSection {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .textSide {
+    padding-top: 57px;
+  }
+
+  .number {
+    font-size: 96px;
+    line-height: 149px;
+  }
+
+  .error {
+    font-size: 24px;
+    line-height: 31px;
+  }
+
+  .pageNotFound {
+    font-size: 24px;
+    line-height: 31px;
+  }
+
+  .imageSide {
+    margin-top: 34px;
+  }
+
+  .notFoundImage {
+    width: 100%;
+  }
+}

@@ -1,0 +1,432 @@
+.container {
+  margin: 0 auto;
+  width: 1280px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.pageTitle {
+  display: none;
+  margin-top: 34px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  color: #c9c2af;
+  margin-left: 37px;
+}
+
+.pageContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pageContainer:after {
+  content: 'retoucheretoucherretoucherretoucherretoucherretoucher retoucheretoucherretoucherretoucherretoucherretoucher retoucheretoucherretoucherretoucherretoucherretoucher retoucheretoucherretoucherretoucherretoucherretoucher retoucheretoucherretoucherretoucherretoucherretoucher retoucheretoucherretoucherretoucherretoucherretoucher retoucheretoucherretoucherretoucherretoucherretoucher retoucheretoucherretoucherretoucherretoucherretoucher retoucheretoucherretoucherretoucherretoucherretoucher retoucheretoucherretoucherretoucherretoucherretoucher retoucheretoucherretoucherretoucherretoucherretoucher retoucheretoucherretoucherretoucherretoucherretoucher retoucheretoucherretoucherretoucherretoucherretoucher retoucheretoucherretoucherretoucherretoucherretoucher retoucheretoucherretoucherretoucherretoucherretoucher';
+  position: absolute;
+  color: rgba(228, 228, 228, 0.4);
+  font-family: 'Cambo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 45px;
+  letter-spacing: 0.085em;
+  top: 228px;
+  margin-left: 69px;
+  z-index: 1;
+}
+
+.priceContainer {
+  display: flex;
+  flex-direction: column;
+  width: 592px;
+  margin-left: 69px;
+  margin-top: 53px;
+  z-index: 10;
+}
+
+.priceThumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 89px;
+  width: 217px;
+  height: 64px;
+  background: #555555;
+  border-radius: 10px;
+}
+
+.thumbText {
+  display: block;
+  font-size: 24px;
+  line-height: 31px;
+
+  color: #c9c2af;
+}
+
+.imageThumb {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-left: 10px;
+  background-color: #fff;
+}
+
+.priceTitle {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+
+  font-family: 'Frank Ruhl Libre', serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+
+  color: #555555;
+}
+
+.priceValue {
+  display: block;
+  text-align: center;
+  margin-top: 2px;
+  margin-bottom: 13px;
+
+  font-family: 'Frank Ruhl Libre', serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+
+  color: #555555;
+}
+
+.termsText {
+  margin: 0 auto;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.payContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 53px;
+  z-index: 10;
+}
+
+.payThumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 89px;
+  width: 577px;
+  height: 64px;
+  background: #555555;
+  border-radius: 10px;
+}
+
+.thumbText {
+  text-align: center;
+}
+
+.iphoneFrame {
+  position: relative;
+  z-index: 10;
+  margin-right: 62px;
+  animation: mobileAppearing;
+  animation-duration: 1s;
+}
+
+.iphoneScreen {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  top: 15px;
+  left: 40px;
+  width: 197px;
+  height: 431px;
+  background-color: #fff;
+  z-index: -1;
+}
+
+.iphone {
+  pointer-events: none;
+  z-index: -1;
+  width: 276px;
+  height: 474px;
+}
+
+.payItem {
+  display: flex;
+  width: 72px;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.payItem:nth-child(even) {
+  margin-left: 10px;
+}
+
+.payItem:nth-child(-n + 2) {
+  margin-top: 40px;
+}
+
+.payItem:last-child {
+  margin-bottom: 40px;
+}
+
+.payTitle {
+  margin-top: 12px;
+
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+
+  color: #000000;
+}
+
+.payPhoto {
+  width: 269px;
+  height: 351px;
+  border-radius: 10px;
+}
+
+.payIcon {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.9px) {
+  .container {
+    width: 704px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .pageTitle {
+    display: block;
+  }
+
+  .pageContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pageContainer::after {
+    content: 'retoucheretoucherretoucheretoucher retoucheretoucherretoucheretoucher retoucheretoucherretoucheretoucher';
+    font-size: 32px;
+    line-height: 30px;
+    letter-spacing: 0.14em;
+    top: 280px;
+    margin-left: 20px;
+  }
+
+  .priceContainer {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .thumbText {
+    text-align: center;
+  }
+
+  .imageThumb {
+    padding-left: 5px;
+    padding-right: 5px;
+    display: inline-flex;
+  }
+
+  .payThumb {
+    position: relative;
+  }
+
+  .payThumb::before {
+    content: 'retoucheretoucherretoucheretoucher retoucheretoucherretoucheretoucher';
+    position: absolute;
+    font-family: 'Cambo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 30px;
+    letter-spacing: 0.14em;
+    top: -60px;
+    margin-left: 20px;
+    color: rgba(228, 228, 228, 0.4);
+  }
+
+  .payThumb::after {
+    content: 'retoucheretoucherretoucheretoucher retoucheretoucherretoucheretoucher retoucheretoucherretoucheretoucher retoucheretoucherretoucheretoucher retoucheretoucherretoucheretoucher retoucheretoucherretoucheretoucher retoucheretoucherretoucheretoucher retoucheretoucherretoucheretoucher retoucheretoucherretoucheretoucher retoucheretoucherretoucheretoucher retoucheretoucherretoucheretoucher retoucheretoucherretoucheretoucher retoucheretoucherretoucheretoucher retoucheretoucherretoucheretoucher retoucheretoucherretoucheretoucher retoucheretoucherretoucheretoucher retoucheretoucherretoucheretoucher retoucheretoucherretoucheretoucher retoucheretoucherretoucheretoucher';
+    position: absolute;
+    font-family: 'Cambo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 30px;
+    letter-spacing: 0.14em;
+    top: 60px;
+    margin-left: 20px;
+    color: rgba(228, 228, 228, 0.4);
+  }
+
+  .priceValue {
+    margin-bottom: 0;
+  }
+
+  .termsText {
+    margin-top: -20px;
+  }
+
+  .iphoneFrame {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  .container {
+    width: 358px;
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+
+  .pageTitle {
+    display: block;
+    margin-top: 40px;
+  }
+
+  .pageContainer {
+    flex-wrap: wrap;
+  }
+
+  .pageContainer::after {
+    content: '';
+  }
+
+  .priceThumb {
+    position: relative;
+  }
+
+  .priceThumb::after {
+    position: absolute;
+    content: 'retoucheretoucher retoucheretoucher';
+    font-family: 'Cambo';
+    font-size: 32px;
+    line-height: 24px;
+    letter-spacing: 0.17em;
+    color: rgba(228, 228, 228, 0.4);
+    top: -50px;
+    left: -103px;
+  }
+
+  .priceContainer {
+    width: 358px;
+    padding-left: 1px;
+    padding-right: 1px;
+    margin-top: 49px;
+    margin-left: 0;
+  }
+
+  .priceThumb {
+    margin: 0 auto 40px;
+    width: 150px;
+    height: 47px;
+    background: #555555;
+    border-radius: 10px;
+  }
+
+  .thumbText {
+    display: block;
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .imageThumb {
+    padding-left: 0;
+  }
+
+  .payPhoto {
+    width: 176px;
+    height: auto;
+  }
+
+  .priceTitle {
+    margin-top: 11px;
+  }
+
+  .priceValue {
+    margin-bottom: 3px;
+  }
+
+  .payContainer {
+    margin: 26px auto 0;
+  }
+
+  .payThumb {
+    position: relative;
+    margin: 0 auto 63px;
+    width: 294px;
+    height: 119px;
+  }
+
+  .payThumb::before {
+    position: absolute;
+    content: 'retoucheretoucher';
+    font-family: 'Cambo';
+    font-size: 32px;
+    line-height: 24px;
+    letter-spacing: 0.17em;
+    color: rgba(228, 228, 228, 0.4);
+    top: -30px;
+    left: -33px;
+  }
+
+  .payThumb::after {
+    position: absolute;
+    content: 'retoucheretoucher retoucheretoucher';
+    font-family: 'Cambo';
+    font-size: 32px;
+    line-height: 24px;
+    letter-spacing: 0.17em;
+    color: rgba(228, 228, 228, 0.4);
+    bottom: -55px;
+    left: -33px;
+  }
+
+  .thumbText {
+    text-align: center;
+  }
+
+  .iphoneFrame {
+    margin-right: 0;
+    margin-bottom: 113px;
+  }
+
+  .iphoneFrame::after {
+    position: absolute;
+    content: 'retoucheretoucher retoucheretoucher retoucheretoucher retoucheretoucher';
+    font-family: 'Cambo';
+    font-size: 32px;
+    line-height: 24px;
+    letter-spacing: 0.17em;
+    color: rgba(228, 228, 228, 0.4);
+    bottom: -100px;
+    left: -40px;
+  }
+
+  .iphoneScreen {
+    top: 20px;
+    left: 40px;
+  }
+}
+
+@keyframes mobileAppearing {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
